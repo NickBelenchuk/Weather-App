@@ -28,7 +28,6 @@ let store = {
 const funcData = async () => {
   const result = await fetch(`${link}&q=${store.city}&aqi=no`);
   const data = await result.json();
-  console.log(data);
   // console.log(data);
   const {
     current: {
